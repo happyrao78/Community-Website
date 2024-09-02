@@ -1,4 +1,3 @@
-
 ### 1. Raise an Issue
 
 1. **Go to the GitHub Repository:**
@@ -11,6 +10,7 @@
    This will open a new issue form where you can describe the problem or feature request.
 
 4. **Provide Issue Details:**
+
    - **Title:** Give a concise title for the issue.
    - **Description:** Include detailed information about the issue or feature request. Be as specific as possible about what needs to be changed or added.
 
@@ -23,13 +23,15 @@
    Start Visual Studio Code.
 
 2. **Open Terminal in VS Code:**
-   Use the shortcut `Ctrl+`` or navigate to `View > Terminal`.
+   Use the shortcut ` Ctrl+`` or navigate to  `View > Terminal`.
 
 3. **Clone the Repository:**
    Enter the following command in the terminal:
+
    ```bash
    git clone https://github.com/happyrao78/Community-Website.git
    ```
+
    This command copies the repository to your local machine.
 
 4. **Navigate to the Repository Directory:**
@@ -44,14 +46,15 @@
    ```bash
    git remote add origin https://github.com/happyrao78/Community-Website.git
    ```
-   
 
 ### 4. Make and Test Changes
 
 1. **Create a New Branch:**
+
    ```bash
    git checkout -b your-branch-name
    ```
+
    Replace `your-branch-name` with a descriptive name for your branch.
 
 2. **Make Changes:**
@@ -69,6 +72,7 @@
 ### 5. Create a Pull Request (PR)
 
 1. **Push Your Branch to GitHub:**
+
    ```bash
    git push origin your-branch-name
    ```
@@ -77,12 +81,14 @@
    Navigate to the repository on GitHub.
 
 3. **Create a Pull Request:**
+
    - Go to the "Pull requests" tab.
    - Click "New pull request."
    - Select your branch and compare it with the main branch.
    - Provide a descriptive title and detailed description of the changes made.
 
 4. **Attach a Sample Video:**
+
    - Record a video demonstrating the changes.
    - Upload the video to a file-sharing service or attach it to the pull request description if possible.
 
