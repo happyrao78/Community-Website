@@ -17,22 +17,27 @@ import Footer from "./components/Footer";
 
 function App() {
 	return (
-		<div className="app">
-			<Header />
-			<Router>
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/about" element={<About />} />
-					<Route path="/events" element={<Events />} />
-					<Route path="/projects" element={<Projects />} />
-					<Route path="/contact" element={<Contact />} />
-					<Route path="/leaderboard" element={<LeaderBoard />} />
-					<Route path="/blog" element={<Blog />} />
-					<Route path="/*" element={<NotFound />} />
-				</Routes>
-			</Router>
-			<Footer />
-		</div>
+		<Router>
+			<div className="app flex flex-col min-h-screen">
+				<Header className="bg-gray-800 text-white p-4" />
+				<main className="flex-grow container mx-auto p-4">
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/about" element={<About />} />
+						<Route path="/events" element={<Events />} />
+						<Route path="/projects" element={<Projects />} />
+						<Route path="/contact" element={<Contact />} />
+						<Route
+							path="/leaderboard"
+							element={<LeaderBoard />}
+						/>
+						<Route path="/blog" element={<Blog />} />
+						<Route path="/*" element={<NotFound />} />
+					</Routes>
+				</main>
+				<Footer className="bg-gray-800 text-white p-4 mt-auto" />
+			</div>
+		</Router>
 	);
 }
 
