@@ -13,6 +13,7 @@ export const Default = Template.bind({});
 Default.args = {
     type: "text",
     placeholder: "Enter text...",
+    size: "md",
     value: "",
 };
 
