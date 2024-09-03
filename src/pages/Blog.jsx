@@ -32,14 +32,12 @@ const Blog = () => {
           365dayscoding Blogs
         </h1>
         
-        {/* Blogs Section Introduction */}
         <section className="mb-12">
           <p className="text-gray-600">
             Welcome to our blog section! Here, you'll find a collection of articles, guides, and insights on various topics related to web development, programming, and technology. Whether you're a beginner or an experienced developer, we hope you find something valuable and engaging. Happy reading!
           </p>
         </section>
 
-        {/* Blog Posts */}
         <div className="space-y-8">
           {posts.map((post, index) => (
             <div key={index} className="bg-white p-6 rounded-lg shadow-md">
