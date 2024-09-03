@@ -12,8 +12,8 @@ import Contact from "./pages/Contact";
 import LeaderBoard from "./pages/LeaderBoard";
 import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/organisms/Header"
+import Footer from "./components/organisms/Footer";
 
 function App() {
 	return (
