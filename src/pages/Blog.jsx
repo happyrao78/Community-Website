@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const posts = [
   {
@@ -25,6 +25,26 @@ const posts = [
 ];
 
 const Blog = () => {
+  const [likes, setLikes] = useState(Array(posts.length).fill(false));
+  const [saved, setSaved] = useState(Array(posts.length).fill(false));
+
+  const handleLike = (index) => {
+    const newLikes = [...likes];
+    newLikes[index] = !newLikes[index];
+    setLikes(newLikes);
+  };
+
+  const handleSave = (index) => {
+    const newSaved = [...saved];
+    newSaved[index] = !newSaved[index];
+    setSaved(newSaved);
+  };
+
+  const handleShare = (link) => {
+    navigator.clipboard.writeText(window.location.origin + link);
+    alert("Post link copied to clipboard!");
+  };
+
   return (
     <div className="bg-gray-100 min-h-screen py-10 flex">
       <div className="container mx-auto px-4 flex">
@@ -43,7 +63,7 @@ const Blog = () => {
             {posts.map((post, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105 hover:shadow-lg"
+                className="relative bg-white p-6 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105 hover:shadow-lg"
               >
                 <h2 className="text-2xl font-semibold text-gray-800 mb-2">
                   {post.title}
@@ -54,10 +74,30 @@ const Blog = () => {
                 <p className="text-gray-700 mb-4">{post.excerpt}</p>
                 <a
                   href={post.link}
-                  className="text-teal-500 font-semibold hover:text-teal-600"
+                  className="text-teal-500 font-semibold hover:text-teal-600 block"
                 >
                   Read More &rarr;
                 </a>
+                <div className="absolute bottom-6 right-6 flex space-x-4">
+                  <button
+                    className="text-2xl"
+                    onClick={() => handleLike(index)}
+                  >
+                    {likes[index] ? "❤️" : "🤍"}
+                  </button>
+                  <button
+                    className="text-2xl"
+                    onClick={() => handleSave(index)}
+                  >
+                    {saved[index] ? "🔖" : "📥"}
+                  </button>
+                  <button
+                    className="text-teal-500 font-semibold hover:text-teal-600"
+                    onClick={() => handleShare(post.link)}
+                  >
+                    Share &rarr;
+                  </button>
+                </div>
               </div>
             ))}
           </div>
