@@ -51,7 +51,7 @@ const About = () => {
             </h2>
             <p className="text-gray-700">
               365dayscoding started as a small group of 
-			  passionate developers who wanted to create a platform where
+			        passionate developers who wanted to create a platform where
               learners and professionals alike could share their knowledge and
               grow together. Over the years, we’ve grown into a thriving
               community, offering a wide range of tutorials, coding challenges,
