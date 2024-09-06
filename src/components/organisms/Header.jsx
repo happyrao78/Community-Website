@@ -10,56 +10,56 @@ const Header = () => {
 				</h1>
 				<ul className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 mt-4 md:mt-0">
 					<li>
-						<Link 
-							to="/" 
+						<Link
+							to="/"
 							className="hover:text-teal-400 transition duration-300 ease-in-out"
 						>
 							Home
 						</Link>
 					</li>
 					<li>
-						<Link 
-							to="/about" 
+						<Link
+							to="/about"
 							className="hover:text-teal-400 transition duration-300 ease-in-out"
 						>
 							About
 						</Link>
 					</li>
 					<li>
-						<Link 
-							to="/events" 
+						<Link
+							to="/events"
 							className="hover:text-teal-400 transition duration-300 ease-in-out"
 						>
 							Events
 						</Link>
 					</li>
 					<li>
-						<Link 
-							to="/projects" 
+						<Link
+							to="/projects"
 							className="hover:text-teal-400 transition duration-300 ease-in-out"
 						>
 							Projects
 						</Link>
 					</li>
 					<li>
-						<Link 
-							to="/contact" 
+						<Link
+							to="/contact"
 							className="hover:text-teal-400 transition duration-300 ease-in-out"
 						>
 							Contact
 						</Link>
 					</li>
 					<li>
-						<Link 
-							to="/leaderboard" 
+						<Link
+							to="/leaderboard"
 							className="hover:text-teal-400 transition duration-300 ease-in-out"
 						>
 							LeaderBoard
 						</Link>
 					</li>
 					<li>
-						<Link 
-							to="/blog" 
+						<Link
+							to="/blog"
 							className="hover:text-teal-400 transition duration-300 ease-in-out"
 						>
 							Blog Posts
